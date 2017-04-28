@@ -2,9 +2,9 @@
 import tensorflow as tf
 
 # tf.constant는 operation 즉 하나의 연산작업
-hello = tf.constant("Hi TensorFlow")
+hello = tf.constant("hi tensorflow")
 
-# print해보면 결과 : Tensor("Const:0", shape=(), dtype=string)
+# print해보면 결과 : tensor("const:0", shape=(), dtype=string)
 # 즉 상수가 아닌 하나의 연산 작업
 print(hello)
 
