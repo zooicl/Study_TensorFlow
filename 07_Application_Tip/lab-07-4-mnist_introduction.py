@@ -31,7 +31,7 @@ is_correct = tf.equal(tf.arg_max(hypothesis, 1), tf.arg_max(Y, 1))
 accuracy = tf.reduce_mean(tf.cast(is_correct, tf.float32))
 
 # parameters
-training_epochs = 15
+training_epochs = 30
 batch_size = 100
 
 with tf.Session() as sess:
@@ -71,22 +71,3 @@ with tf.Session() as sess:
     # plt.show()
 
 
-'''
-Epoch: 0001 cost = 2.868104637
-Epoch: 0002 cost = 1.134684615
-Epoch: 0003 cost = 0.908220728
-Epoch: 0004 cost = 0.794199896
-Epoch: 0005 cost = 0.721815854
-Epoch: 0006 cost = 0.670184430
-Epoch: 0007 cost = 0.630576546
-Epoch: 0008 cost = 0.598888191
-Epoch: 0009 cost = 0.573027079
-Epoch: 0010 cost = 0.550497213
-Epoch: 0011 cost = 0.532001859
-Epoch: 0012 cost = 0.515517795
-Epoch: 0013 cost = 0.501175288
-Epoch: 0014 cost = 0.488425370
-Epoch: 0015 cost = 0.476968593
-Learning finished
-Accuracy:  0.888
-'''
