@@ -53,9 +53,9 @@ accuracy_summ = tf.summary.scalar("accuracy", accuracy)
 
 # Launch graph
 with tf.Session() as sess:
-    # tensorboard --logdir=./logs/xor_logs
+    # tensorboard --logdir=./logs
     merged_summary = tf.summary.merge_all()
-    writer = tf.summary.FileWriter("./logs/xor_logs_r0_01")
+    writer = tf.summary.FileWriter("./logs/")
     writer.add_graph(sess.graph)  # Show the graph
 
     # Initialize TensorFlow variables
